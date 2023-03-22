@@ -1,0 +1,16 @@
+.tabItem {
+  color: var(--text);
+  position: relative;
+  outline: none;
+  text-align: center;
+  border-bottom: 4px solid #ffffff00;
+  padding: 8px 0px;
+  margin: 0 25px -2px 25px;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.tabItem[aria-selected="true"] {
+  color: var(--primary);
+  border-color: var(--primary);
+}

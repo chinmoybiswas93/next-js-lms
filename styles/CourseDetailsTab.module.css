@@ -1,0 +1,16 @@
+.tabs {
+  margin-top: 40px;
+  background-color: white;
+  position: sticky;
+  top: 68px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: -100px;
+}
+
+.tabItem > div {
+  padding: 10px 0;
+}
+.active > div {
+  padding: 10px 0;
+  border-bottom: 3px solid var(--primary);
+}

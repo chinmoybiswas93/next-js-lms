@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #f05a30;
+  --secondary: #001d48;
+  --orange-bg: #fff8f5;
+  --text: #575757;
+  --black: #000000;
+  --white: #ffffff;
+  --border: #e5e7eb;
+}
+
+body {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.heading {
+  font-size: 26px;
+  color: var(--secondary);
+  font-weight: 700;
+}
+.subheading {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.text-desc {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 40px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+  .text-desc {
+    font-size: 16px;
+  }
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ebebeb;
+  border: 1px solid #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border: 1px solid #fff;
+  height: 50px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+.course-tab-list .slick-prev:before,
+.course-tab-list .slick-next:before {
+  content: "" !important;
+  opacity: 0.75;
+  color: black !important;
+}
+
+/* the slides */
+.course-tab-list .slick-slide {
+  margin: 0 10px;
+}
+/* the parent */
+.course-tab-list .slick-list {
+  margin: 0 -10px;
+}
+
+.course-tab-list .slick-track {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2px;
+}
+
+.courses-carousel .slick-prev:before {
+  content: url("/images/left arrow.svg");
+}
+.courses-carousel .slick-next:before {
+  content: url("/images/right arrow.svg");
+}
+
+.courses-carousel .slick-prev {
+  left: -10px;
+}
+.courses-carousel .slick-next {
+  right: -10px;
+}
+
+@media (min-width: 768px) {
+  .courses-carousel .slick-prev {
+    left: -25px;
+  }
+  .courses-carousel .slick-next {
+    right: -25px;
+  }
+}
+
+.testimonial-slider .slick-slide.slick-center .content {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: var(--primary) !important;
+  font-size: 10px !important;
+}
+.slick-dots li button:before {
+  font-size: 8px !important;
+}
+
+div[data-testid="flowbite-accordion"] > button:focus {
+  box-shadow: none;
+}
+
+.loading-spinner {
+  fill: var(--primary) !important;
+  width: 2rem;
+  height: 2rem;
+}
+
+
+.sticky .logo {
+  max-width: 120px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky .navbar-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.course-module-accordion-tab {
+  padding: 10px 10px;
+}

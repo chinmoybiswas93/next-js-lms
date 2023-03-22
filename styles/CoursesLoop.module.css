@@ -1,0 +1,17 @@
+.loopItem {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .item {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+  }
+
+  .item:hover {
+    border: 1px solid var(--border);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
